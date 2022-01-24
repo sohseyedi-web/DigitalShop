@@ -1,0 +1,113 @@
+.cart {
+    background-color: #082032;
+    color: #f9fafa;
+    min-height: 100vh;
+
+    &-list {
+        width: 60%;
+        margin: 0 auto;
+        padding: .7rem;
+        border-radius: .5rem;
+        border: 2px solid #f0a500;
+        box-shadow: 0px 0px 3px #f0a500;
+
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem 0;
+
+            &-details {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: .5rem;
+                    margin-right: 1.5rem;
+                }
+
+                &__name {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+
+                }
+
+
+            }
+
+            &-actions {
+                width: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #082032;
+                border-radius: 1.4rem;
+
+                button {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: none;
+                    font-size: 1.2rem;
+                    background-color: #f0a500;
+                    font-weight: 700;
+
+                }
+
+                span {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #f9fafa;
+                }
+            }
+
+        }
+    }
+
+    &-total {
+        width: 60%;
+        margin: 1rem auto;
+        padding: .7rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid #f0a500;
+        box-shadow: 0px 0px 3px #f0a500;
+
+
+        &__left {
+            border-bottom: 2px solid #082032;
+
+            span {
+
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+
+        &__right {
+            width: 145px;
+            text-align: center;
+            background-color: #f0a500;
+            border-radius: 1.4rem;
+            padding: .5rem;
+            cursor: pointer;
+            font-weight: 500;
+            color: #082032;
+        }
+    }
+
+
+    @media screen and (max-width : 998px) {
+
+        &-total,
+        &-list {
+            width: 100%;
+        }
+    }
+}
