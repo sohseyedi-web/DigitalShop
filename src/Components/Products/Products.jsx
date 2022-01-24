@@ -2,6 +2,7 @@ import React from 'react';
 import './Products.scss'
 import { ProductsData } from './../../Data/data';
 import { useCart, useCartDispatch } from './../../Context/CartContext';
+import { toast } from 'react-toastify';
 
 const Products = () => {
 
@@ -10,6 +11,7 @@ const Products = () => {
     const dispatch = useCartDispatch();
 
     const addItemHandler = (item) => {
+        toast.success(`${item.name} به سبد خرید اضافه شد`)
         dispatch({ type: 'ADD_ITEM', payload: item });
     }
 
