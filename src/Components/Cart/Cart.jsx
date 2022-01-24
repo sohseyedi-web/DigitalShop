@@ -12,7 +12,7 @@ const Cart = () => {
     const totalCart = cartItems.reduce((price, item) => price + item.quantity * item.price, 0)
     return (
         <Layout>
-            <section className='cart pt-3'>
+            <section className='cart'>
                 <div className="container">
                     {
                         !hasItem ? (

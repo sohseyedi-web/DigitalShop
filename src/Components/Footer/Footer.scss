@@ -1,0 +1,39 @@
+.footer {
+    background-color: #082032;
+    width: 100%;
+    padding: 1rem;
+    border-top: 4px solid #f0a500;
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #f9fafa;
+        font-size: 1.5rem;
+
+        &__logo {
+            letter-spacing: 7px;
+            font-weight: 600;
+            color: #f0a500;
+        }
+
+        &__links {
+            width: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-text {
+                color: #f9fafa;
+                opacity: .8;
+                transition: all .4s ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                    transition: all .4s ease-in-out;
+                    color: #f0a500;
+                }
+            }
+        }
+    }
+}
