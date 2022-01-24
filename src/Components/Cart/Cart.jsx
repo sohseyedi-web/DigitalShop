@@ -24,7 +24,10 @@ const Cart = () => {
                                             <li className='cart-list__item' key={item.id}>
                                                 <div className="cart-list__item-details">
                                                     <img className="cart-list__item-details__img" alt={item.name} src={item.image} />
-                                                    <div className="cart-list__item-details__name">{item.name}</div>
+                                                    <div className="cart-list__item-details__desc">
+                                                        <span className="cart-list__item-details__desc-name">{item.name}</span>
+                                                        <span className="cart-list__item-details__desc-price">{item.price}/000</span>
+                                                    </div>
                                                 </div>
                                                 <div className="cart-list__item-actions">
                                                     <button className="cart-list__item-actions__btn" onClick={() => dispatch({ type: "ADD_ITEM", payload: item })}><BiPlus size={25} /></button>
